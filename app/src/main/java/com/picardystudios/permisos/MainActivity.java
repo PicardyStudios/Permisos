@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
                 .runtime()
                 .permission(Permission.Group.CAMERA)
                 .onGranted(permissions -> {
-                    Toast.makeText(MainActivity.this, "Concedenos permiso para utilizar la camara", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Permisos concedidos..", Toast.LENGTH_LONG).show();
                 })
                 .onDenied(permissions -> {
-                    Log.e("PERMISOS","Concedenos permiso para utilizar la camara");
                     Toast.makeText(MainActivity.this, "Concedenos permiso para utilizar la camara", Toast.LENGTH_LONG).show();
                 })
                 .start();
+
     }
 }
